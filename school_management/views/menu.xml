@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <menuitem id="main_school_management_menu" name="School Management" />
+
+  <menuitem id="school_course_menu" name="School Courses" parent="main_school_management_menu" sequence="10" />
+  <menuitem id="school_student_menu" name="School Students" parent="main_school_management_menu" sequence="20" />
+
+  <record model="ir.ui.view" id="view_school_course_tree">
+    <field name="name">school_management.course.tree</field>
+    <field name="model">school_management.course</field>
+    <field name="arch" type="xml">
+      <reference id="school_course_tree" />
+    </field>
+    <field name="menu_action" ref="school_course_menu" />
+  </record>
+
+</odoo>
