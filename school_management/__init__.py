@@ -2,7 +2,6 @@
 
 from . import models  # Import models.py
 from . import views  # Import views.xml
-from . import menu  # Import menu.xml
 from . import controllers  # (Optional) Import controllers.py if you have one
 
 def pre_init_check(cr):
@@ -14,5 +13,6 @@ def register(cr):
   custom_view([
       ('school_management.course.tree', 'tree'),
       ('school_management.course.form', 'form'),
+      ('school_management.student.tree', 'tree'),
       ('school_management.student.form', 'form'),
   ])
