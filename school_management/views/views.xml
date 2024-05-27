@@ -73,6 +73,9 @@
             <field name="enrolment_date" />
             <field name="active" />
           </group>
+          <group>
+              <field name="email" />  <!-- Add this line -->
+          </group>
         </sheet>
       </form>  
     </field>

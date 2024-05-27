@@ -12,13 +12,15 @@
     'category': 'Uncategorized',
     'version': '0.1',
 
-    'depends': ['base'],
+    'depends': ['base' , 'mail'],
 
 
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'data/email_template.xml', # Add this line
+        'data/scheduled_action.xml',  # Add this line
     ],
     'demo': [
         'demo/demo.xml',

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="email_template_course_reminder" model="mail.template">
+        <field name="name">Course Reminder</field>
+        <field name="model_id" ref="model_school_management_course_reminder"/>
+        <field name="subject">Reminder: Upcoming Course</field>
+        <field name="email_from">${object.course_id.user_id.email|safe}</field>
+        <field name="email_to">${object.student_id.email|safe}</field> <!-- Update this line -->
+        <field name="body_html">
+            <![CDATA[
+                <p>Dear ${object.student_id.name},</p>
+                <p>This is a reminder for the course <b>${object.course_id.name}</b> which will start on <b>${object.course_id.start_date}</b>.</p>
+                <p>Thank you,</p>
+                <p>Your School</p>
+            ]]>
+        </field>
+    </record>
+</odoo>

@@ -3,6 +3,7 @@
 from . import models  # Import models.py
 from . import views  # Import views.xml
 from . import controllers  # (Optional) Import controllers.py if you have one
+from . import course_reminder
 
 def pre_init_check(cr):
   from odoo.service import security_model

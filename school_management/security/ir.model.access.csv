@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_school_management_student,school_management.student,model_school_management_student,base.group_user,1,1,1,1
 access_school_management_course,school_management.course,model_school_management_course,base.group_user,1,1,1,1
+access_school_management_course_reminder,access_school_management_course_reminder,model_school_management_course_reminder,,1,1,1,1
